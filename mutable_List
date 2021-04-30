@@ -1,0 +1,35 @@
+fun main() 
+{
+    //val entrees = mutableListOf()
+    
+    //val entrees = mutableListOf<String>()
+    
+    val entrees: MutableList<String> = mutableListOf()
+    println("Entrees: $entrees")
+    
+    //add items add()
+    println("Add Noodles: ${entrees.add("noodles")}")
+    println("Entrees:$entrees")
+    println("Add Spaghetti: ${entrees.add("spaghetti")}")
+    println("Entrees:$entrees")
+    
+    //add list using addAll()
+    val moreItems = listOf("ravioli","lasagna","fettuccine")
+    println("moreList: $moreItems")
+    println("Add list: ${entrees.addAll(moreItems)}")
+    println("Entrees: $entrees")
+    
+    
+    //remove items remove()
+    println("Remove spaghetti: ${entrees.remove("spaghetti")}")
+    println("Entrees:$entrees")
+    println("Remove item that doesn't exist: ${entrees.remove("rice")}")
+    println("Entrees:$entrees")
+    
+    //clear list
+    entrees.clear()
+    println("Entrees: $entrees")
+    
+    //check if the list is empty
+    println("Empty? ${entrees.isEmpty()}")
+}
